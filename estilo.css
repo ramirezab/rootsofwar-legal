@@ -1,0 +1,31 @@
+/* Paleta del juego: la savia sobre tierra húmeda. El fondo es el mismo
+   #0a1410 que usa la app en el arranque, así que abrir la política desde el
+   juego no da un salto de blanco a la cara. */
+:root{
+  --bg:#0a1410; --panel:#101c17; --line:#22362c;
+  --tx:#e6f0ea; --dim:#9db3a7; --savia:#7fe0a0; --gold:#ffd24f;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:16px/1.65 'Segoe UI',system-ui,-apple-system,sans-serif;
+  padding:32px 18px 80px;}
+main{max-width:760px;margin:0 auto}
+h1{font-size:28px;line-height:1.2;margin:0 0 6px;color:#fff}
+h2{font-size:19px;margin:38px 0 10px;color:var(--savia);
+  border-bottom:1px solid var(--line);padding-bottom:6px}
+h3{font-size:16px;margin:22px 0 6px;color:var(--gold)}
+.sub{color:var(--dim);margin:0 0 28px;font-size:14px}
+p,li{color:var(--tx)}
+li{margin:5px 0}
+code{background:var(--panel);border:1px solid var(--line);border-radius:4px;
+  padding:1px 6px;font-size:14px;color:var(--gold)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border:1px solid var(--line);vertical-align:top}
+th{background:var(--panel);color:var(--savia);font-weight:600}
+.nota{background:var(--panel);border-left:3px solid var(--savia);
+  padding:12px 16px;border-radius:0 6px 6px 0;margin:18px 0}
+a{color:var(--savia)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);
+  color:var(--dim);font-size:14px}
+nav{margin-bottom:26px;display:flex;flex-wrap:wrap;gap:16px}
+nav a{font-size:14px}
